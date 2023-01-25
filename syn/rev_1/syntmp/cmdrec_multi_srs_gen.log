@@ -1,0 +1,8 @@
+/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter  -link  -multisrs  /home/gfa2226/fpga/hw3/motion_detect/syn/rev_1/synwork/subtract_comp.srs  -osyn  /home/gfa2226/fpga/hw3/motion_detect/syn/rev_1/synwork/subtract_mult.srs  -log  /home/gfa2226/fpga/hw3/motion_detect/syn/rev_1/synlog/subtract_multi_srs_gen.srr 
+relcom:/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter -link -multisrs ../synwork/subtract_comp.srs -osyn ../synwork/subtract_mult.srs -log ../synlog/subtract_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/subtract_comp.srs|io:i|time:1674626018|size:9288|exec:0|csum:BF521524BCEF835AA3BB9BF8F18DF7EA
+file:../synwork/subtract_mult.srs|io:o|time:1674626019|size:4928|exec:0|csum:
+file:../synlog/subtract_multi_srs_gen.srr|io:o|time:1674626019|size:1452|exec:0|csum:
+file:/vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/syn_nfilter|io:i|time:1543382463|size:12202632|exec:1|csum:2CF5CA82A12C53A85C3E36D57C2461DC
+file:/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter|io:i|time:1543382354|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0

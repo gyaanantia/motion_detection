@@ -1,0 +1,710 @@
+
+BeginView motion_detect_top motion_detect_top
+Inst: retbg_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]   retbg_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_m_2_ cycloneive_lcell_comb 
+Inst: retfr_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]   retfr_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_m_2_ cycloneive_lcell_comb 
+Inst: fr_din_in[23]   fr_din_in_23_ cycloneive_io_ibuf 
+Inst: fr_din_in[22]   fr_din_in_22_ cycloneive_io_ibuf 
+Inst: fr_din_in[21]   fr_din_in_21_ cycloneive_io_ibuf 
+Inst: fr_din_in[20]   fr_din_in_20_ cycloneive_io_ibuf 
+Inst: fr_din_in[19]   fr_din_in_19_ cycloneive_io_ibuf 
+Inst: fr_din_in[18]   fr_din_in_18_ cycloneive_io_ibuf 
+Inst: fr_din_in[17]   fr_din_in_17_ cycloneive_io_ibuf 
+Inst: fr_din_in[16]   fr_din_in_16_ cycloneive_io_ibuf 
+Inst: fr_din_in[15]   fr_din_in_15_ cycloneive_io_ibuf 
+Inst: fr_din_in[14]   fr_din_in_14_ cycloneive_io_ibuf 
+Inst: fr_din_in[13]   fr_din_in_13_ cycloneive_io_ibuf 
+Inst: fr_din_in[12]   fr_din_in_12_ cycloneive_io_ibuf 
+Inst: fr_din_in[11]   fr_din_in_11_ cycloneive_io_ibuf 
+Inst: fr_din_in[10]   fr_din_in_10_ cycloneive_io_ibuf 
+Inst: fr_din_in[9]   fr_din_in_9_ cycloneive_io_ibuf 
+Inst: fr_din_in[8]   fr_din_in_8_ cycloneive_io_ibuf 
+Inst: fr_din_in[7]   fr_din_in_7_ cycloneive_io_ibuf 
+Inst: fr_din_in[6]   fr_din_in_6_ cycloneive_io_ibuf 
+Inst: fr_din_in[5]   fr_din_in_5_ cycloneive_io_ibuf 
+Inst: fr_din_in[4]   fr_din_in_4_ cycloneive_io_ibuf 
+Inst: fr_din_in[3]   fr_din_in_3_ cycloneive_io_ibuf 
+Inst: fr_din_in[2]   fr_din_in_2_ cycloneive_io_ibuf 
+Inst: fr_din_in[1]   fr_din_in_1_ cycloneive_io_ibuf 
+Inst: fr_din_in[0]   fr_din_in_0_ cycloneive_io_ibuf 
+Inst: bg_din_in[23]   bg_din_in_23_ cycloneive_io_ibuf 
+Inst: bg_din_in[22]   bg_din_in_22_ cycloneive_io_ibuf 
+Inst: bg_din_in[21]   bg_din_in_21_ cycloneive_io_ibuf 
+Inst: bg_din_in[20]   bg_din_in_20_ cycloneive_io_ibuf 
+Inst: bg_din_in[19]   bg_din_in_19_ cycloneive_io_ibuf 
+Inst: bg_din_in[18]   bg_din_in_18_ cycloneive_io_ibuf 
+Inst: bg_din_in[17]   bg_din_in_17_ cycloneive_io_ibuf 
+Inst: bg_din_in[16]   bg_din_in_16_ cycloneive_io_ibuf 
+Inst: bg_din_in[15]   bg_din_in_15_ cycloneive_io_ibuf 
+Inst: bg_din_in[14]   bg_din_in_14_ cycloneive_io_ibuf 
+Inst: bg_din_in[13]   bg_din_in_13_ cycloneive_io_ibuf 
+Inst: bg_din_in[12]   bg_din_in_12_ cycloneive_io_ibuf 
+Inst: bg_din_in[11]   bg_din_in_11_ cycloneive_io_ibuf 
+Inst: bg_din_in[10]   bg_din_in_10_ cycloneive_io_ibuf 
+Inst: bg_din_in[9]   bg_din_in_9_ cycloneive_io_ibuf 
+Inst: bg_din_in[8]   bg_din_in_8_ cycloneive_io_ibuf 
+Inst: bg_din_in[7]   bg_din_in_7_ cycloneive_io_ibuf 
+Inst: bg_din_in[6]   bg_din_in_6_ cycloneive_io_ibuf 
+Inst: bg_din_in[5]   bg_din_in_5_ cycloneive_io_ibuf 
+Inst: bg_din_in[4]   bg_din_in_4_ cycloneive_io_ibuf 
+Inst: bg_din_in[3]   bg_din_in_3_ cycloneive_io_ibuf 
+Inst: bg_din_in[2]   bg_din_in_2_ cycloneive_io_ibuf 
+Inst: bg_din_in[1]   bg_din_in_1_ cycloneive_io_ibuf 
+Inst: bg_din_in[0]   bg_din_in_0_ cycloneive_io_ibuf 
+Inst: dout_out[23]   dout_out_23_ cycloneive_io_obuf 
+Inst: dout_out[22]   dout_out_22_ cycloneive_io_obuf 
+Inst: dout_out[21]   dout_out_21_ cycloneive_io_obuf 
+Inst: dout_out[20]   dout_out_20_ cycloneive_io_obuf 
+Inst: dout_out[19]   dout_out_19_ cycloneive_io_obuf 
+Inst: dout_out[18]   dout_out_18_ cycloneive_io_obuf 
+Inst: dout_out[17]   dout_out_17_ cycloneive_io_obuf 
+Inst: dout_out[16]   dout_out_16_ cycloneive_io_obuf 
+Inst: dout_out[15]   dout_out_15_ cycloneive_io_obuf 
+Inst: dout_out[14]   dout_out_14_ cycloneive_io_obuf 
+Inst: dout_out[13]   dout_out_13_ cycloneive_io_obuf 
+Inst: dout_out[12]   dout_out_12_ cycloneive_io_obuf 
+Inst: dout_out[11]   dout_out_11_ cycloneive_io_obuf 
+Inst: dout_out[10]   dout_out_10_ cycloneive_io_obuf 
+Inst: dout_out[9]   dout_out_9_ cycloneive_io_obuf 
+Inst: dout_out[8]   dout_out_8_ cycloneive_io_obuf 
+Inst: dout_out[7]   dout_out_7_ cycloneive_io_obuf 
+Inst: dout_out[6]   dout_out_6_ cycloneive_io_obuf 
+Inst: dout_out[5]   dout_out_5_ cycloneive_io_obuf 
+Inst: dout_out[4]   dout_out_4_ cycloneive_io_obuf 
+Inst: dout_out[3]   dout_out_3_ cycloneive_io_obuf 
+Inst: dout_out[2]   dout_out_2_ cycloneive_io_obuf 
+Inst: dout_out[1]   dout_out_1_ cycloneive_io_obuf 
+Inst: dout_out[0]   dout_out_0_ cycloneive_io_obuf 
+Net:  bg_grayscale.in_rd_en   bg_grayscale_in_rd_en 
+Net:  bg_grayscale.out_din[0]   bg_grayscale_out_din[0] 
+Net:  bg_grayscale.out_din[1]   bg_grayscale_out_din[1] 
+Net:  bg_grayscale.out_din[2]   bg_grayscale_out_din[2] 
+Net:  bg_grayscale.out_din[3]   bg_grayscale_out_din[3] 
+Net:  bg_grayscale.out_din[4]   bg_grayscale_out_din[4] 
+Net:  bg_grayscale.out_din[5]   bg_grayscale_out_din[5] 
+Net:  bg_grayscale.out_din[6]   bg_grayscale_out_din[6] 
+Net:  bg_grayscale.out_din[7]   bg_grayscale_out_din[7] 
+Net:  fr_grayscale.out_din[0]   fr_grayscale_out_din[0] 
+Net:  fr_grayscale.out_din[1]   fr_grayscale_out_din[1] 
+Net:  fr_grayscale.out_din[2]   fr_grayscale_out_din[2] 
+Net:  fr_grayscale.out_din[3]   fr_grayscale_out_din[3] 
+Net:  fr_grayscale.out_din[4]   fr_grayscale_out_din[4] 
+Net:  fr_grayscale.out_din[5]   fr_grayscale_out_din[5] 
+Net:  fr_grayscale.out_din[6]   fr_grayscale_out_din[6] 
+Net:  fr_grayscale.out_din[7]   fr_grayscale_out_din[7] 
+Net:  final_fifo.full   final_fifo_full 
+Net:  subtractor.state[0]   subtractor_state[0] 
+Net:  fr_grayscale.state[0]   fr_grayscale_state[0] 
+Net:  gray_fr.wr_addr[5]   gray_fr_wr_addr[5] 
+Net:  gray_fr.rd_addr[5]   gray_fr_rd_addr[5] 
+Net:  gray_fr.wr_addr[4]   gray_fr_wr_addr[4] 
+Net:  gray_fr.rd_addr[4]   gray_fr_rd_addr[4] 
+Net:  gray_bg.wr_addr[5]   gray_bg_wr_addr[5] 
+Net:  gray_bg.rd_addr[5]   gray_bg_rd_addr[5] 
+Net:  gray_bg.wr_addr[3]   gray_bg_wr_addr[3] 
+Net:  gray_bg.wr_addr[4]   gray_bg_wr_addr[4] 
+Net:  gray_bg.rd_addr[3]   gray_bg_rd_addr[3] 
+Net:  gray_bg.rd_addr[4]   gray_bg_rd_addr[4] 
+Net:  bg_grayscale.un2_gs_c_add8   bg_grayscale_un2_gs_c_add8 
+Net:  subtractor.sub_0_0_0__g0_i_o4   subtractor_sub_0_0_0__g0_i_o4 
+Net:  fr_grayscale.gs_1_0_0__g0_i_o4   fr_grayscale_gs_1_0_0__g0_i_o4 
+Net:  gray_fr.empty   gray_fr_empty 
+Net:  gray_bg.empty   gray_bg_empty 
+Net:  frame.empty   frame_empty 
+Net:  background.empty   background_empty 
+Net:  background.full   background_full 
+Net:  frame.full   frame_full 
+Net:  gray_bg.full_2   gray_bg_full_2 
+Net:  gray_bg.empty_t_2   gray_bg_empty_t_2 
+Net:  gray_fr.full_3   gray_fr_full_3 
+Net:  gray_fr.full_2   gray_fr_full_2 
+Net:  sub_fifo.full   sub_fifo_full 
+Net:  fr_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1   fr_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_0_c1 
+Net:  fr_grayscale.SUM_0_1_i_o3[3]   fr_grayscale_SUM_0_1_i_o3[3] 
+Net:  fr_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_1_sum2   fr_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_1_sum2 
+Net:  bg_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_1_anc2   bg_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_1_anc2 
+Net:  bg_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2   bg_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_0_sum2 
+Net:  fr_grayscale.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2_2   fr_grayscale_un11_gs_c_if_generate_plus_mult1_un40_sum_0_sum2_2 
+Net:  bg_grayscale.out_wr_en   bg_grayscale_out_wr_en 
+Net:  fr_grayscale.out_wr_en   fr_grayscale_out_wr_en 
+Net:  subtractor.out_din_1[0]   subtractor_out_din_1[0] 
+EndView motion_detect_top motion_detect_top
+
+BeginView fifo_24s_32s_6s fifo_24s_32s_6s
+Inst: rd_addr[5]   rd_addr_5_ dffeas 
+Inst: rd_addr[4]   rd_addr_4_ dffeas 
+Inst: rd_addr[3]   rd_addr_3_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[5]   wr_addr_5_ dffeas 
+Inst: wr_addr[4]   wr_addr_4_ dffeas 
+Inst: wr_addr[3]   wr_addr_3_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: p_empty\.un1_empty_a_4_add0   p_empty_un1_empty_a_4_add0 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add1   p_empty_un1_empty_a_4_add1 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add2   p_empty_un1_empty_a_4_add2 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add3   p_empty_un1_empty_a_4_add3 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add4   p_empty_un1_empty_a_4_add4 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add5   p_empty_un1_empty_a_4_add5 cycloneive_lcell_comb 
+Inst: full_3   full_3_cZ cycloneive_lcell_comb 
+Inst: full_2   full_2_cZ cycloneive_lcell_comb 
+Inst: empty_t_NE_0   empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: full_0   full_0_cZ cycloneive_lcell_comb 
+Inst: rd_addr_t   rd_addr_t_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_axb0   un10_rd_addr_t_axb0_cZ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc1   un8_wr_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc1   un10_rd_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum1   un10_rd_addr_t_sum1_cZ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc2   un8_wr_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[4]   wr_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[3]   wr_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc2   un10_rd_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum2   un10_rd_addr_t_sum2_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[5]   wr_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum3   un10_rd_addr_t_sum3_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[5]   rd_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum4   un10_rd_addr_t_sum4_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s fifo_24s_32s_6s
+
+BeginView fifo_24s_32s_6s_4 fifo_24s_32s_6s_4
+Inst: rd_addr[5]   rd_addr_5_ dffeas 
+Inst: rd_addr[4]   rd_addr_4_ dffeas 
+Inst: rd_addr[3]   rd_addr_3_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[5]   wr_addr_5_ dffeas 
+Inst: wr_addr[4]   wr_addr_4_ dffeas 
+Inst: wr_addr[3]   wr_addr_3_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: p_empty\.un1_empty_a_4_add0   p_empty_un1_empty_a_4_add0 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add1   p_empty_un1_empty_a_4_add1 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add2   p_empty_un1_empty_a_4_add2 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add3   p_empty_un1_empty_a_4_add3 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add4   p_empty_un1_empty_a_4_add4 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add5   p_empty_un1_empty_a_4_add5 cycloneive_lcell_comb 
+Inst: full_2   full_2_cZ cycloneive_lcell_comb 
+Inst: full_3   full_3_cZ cycloneive_lcell_comb 
+Inst: empty_t_NE_0   empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: full_0   full_0_cZ cycloneive_lcell_comb 
+Inst: empty_t_NE   empty_t_NE_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_axb0   un10_rd_addr_t_axb0_cZ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc1   un8_wr_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc2   un8_wr_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum1   un10_rd_addr_t_sum1_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc1   un10_rd_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum2   un10_rd_addr_t_sum2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc2   un10_rd_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[3]   wr_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[4]   wr_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum3   un10_rd_addr_t_sum3_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[5]   wr_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum4   un10_rd_addr_t_sum4_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[5]   rd_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s_4 fifo_24s_32s_6s_4
+
+BeginView grayscale grayscale
+Inst: gs[7]   gs_7_ dffeas 
+Inst: gs[6]   gs_6_ dffeas 
+Inst: gs[5]   gs_5_ dffeas 
+Inst: gs[4]   gs_4_ dffeas 
+Inst: gs[3]   gs_3_ dffeas 
+Inst: gs[2]   gs_2_ dffeas 
+Inst: gs[1]   gs_1_ dffeas 
+Inst: gs[0]   gs_0_ dffeas 
+Inst: state[0]   state_0_ dffeas 
+Inst: un2_gs_c_add0   un2_gs_c_add0_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add1   un2_gs_c_add1_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add2   un2_gs_c_add2_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add3   un2_gs_c_add3_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add4   un2_gs_c_add4_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add5   un2_gs_c_add5_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add6   un2_gs_c_add6_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add7   un2_gs_c_add7_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add0   un2_gs_c_0_add0_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add1   un2_gs_c_0_add1_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add2   un2_gs_c_0_add2_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add3   un2_gs_c_0_add3_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add4   un2_gs_c_0_add4_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add5   un2_gs_c_0_add5_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add6   un2_gs_c_0_add6_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add7   un2_gs_c_0_add7_cZ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add1   un11_gs_c_if_generate_plus_mult1_un68_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add2   un11_gs_c_if_generate_plus_mult1_un68_sum_add2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add3   un11_gs_c_if_generate_plus_mult1_un68_sum_add3 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add1   un11_gs_c_if_generate_plus_mult1_un61_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add2   un11_gs_c_if_generate_plus_mult1_un61_sum_add2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add3   un11_gs_c_if_generate_plus_mult1_un61_sum_add3 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add1   un11_gs_c_if_generate_plus_mult1_un54_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add2   un11_gs_c_if_generate_plus_mult1_un54_sum_add2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add3   un11_gs_c_if_generate_plus_mult1_un54_sum_add3 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add1   un11_gs_c_if_generate_plus_mult1_un47_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add2   un11_gs_c_if_generate_plus_mult1_un47_sum_add2 cycloneive_lcell_comb 
+Inst: out_din[7]   out_din_7_ cycloneive_lcell_comb 
+Inst: out_din[6]   out_din_6_ cycloneive_lcell_comb 
+Inst: out_din[5]   out_din_5_ cycloneive_lcell_comb 
+Inst: out_din[4]   out_din_4_ cycloneive_lcell_comb 
+Inst: out_din[3]   out_din_3_ cycloneive_lcell_comb 
+Inst: out_din[2]   out_din_2_ cycloneive_lcell_comb 
+Inst: out_din[1]   out_din_1_ cycloneive_lcell_comb 
+Inst: out_din[0]   out_din_0_ cycloneive_lcell_comb 
+Inst: gs_RNO_0[7]   gs_RNO_0_7_ cycloneive_lcell_comb 
+Inst: state_0_0_0__g2_0   state_0_0_0__g2_0_cZ cycloneive_lcell_comb 
+Inst: gs_RNO[7]   gs_RNO_7_ cycloneive_lcell_comb 
+Inst: state_0_0_0__g2_1   state_0_0_0__g2_1_cZ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2_1   un11_gs_c_if_generate_plus_mult1_un40_sum_0_sum2_1 cycloneive_lcell_comb 
+Inst: state_RNO[0]   state_RNO_0_ cycloneive_lcell_comb 
+Inst: gs_RNO[6]   gs_RNO_6_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_m_a[1]   un11_gs_c_if_generate_plus_mult1_un40_sum_m_a_1_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_m[1]   un11_gs_c_if_generate_plus_mult1_un40_sum_m_1_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_1_anc2   un11_gs_c_if_generate_plus_mult1_un40_sum_1_anc2 cycloneive_lcell_comb 
+Inst: gs_RNO_0[0]   gs_RNO_0_0_ cycloneive_lcell_comb 
+Inst: gs_RNO[0]   gs_RNO_0_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2_a   un11_gs_c_if_generate_plus_mult1_un40_sum_0_sum2_a cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2   un11_gs_c_if_generate_plus_mult1_un40_sum_0_sum2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]   un11_gs_c_if_generate_plus_mult1_un40_sum_m_2_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term   un11_gs_c_if_generate_plus_mult1_un47_sum_add2_term cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un47_sum_add1_start cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un54_sum_add1_start cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un61_sum_add1_start cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un68_sum_add1_start cycloneive_lcell_comb 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView grayscale grayscale
+
+BeginView grayscale_0 grayscale_0
+Inst: gs[7]   gs_7_ dffeas 
+Inst: gs[6]   gs_6_ dffeas 
+Inst: gs[5]   gs_5_ dffeas 
+Inst: gs[4]   gs_4_ dffeas 
+Inst: gs[3]   gs_3_ dffeas 
+Inst: gs[2]   gs_2_ dffeas 
+Inst: gs[1]   gs_1_ dffeas 
+Inst: gs[0]   gs_0_ dffeas 
+Inst: state[0]   state_0_ dffeas 
+Inst: un2_gs_c_add0   un2_gs_c_add0_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add1   un2_gs_c_add1_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add2   un2_gs_c_add2_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add3   un2_gs_c_add3_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add4   un2_gs_c_add4_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add5   un2_gs_c_add5_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add6   un2_gs_c_add6_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add7   un2_gs_c_add7_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_add8   un2_gs_c_add8_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add0   un2_gs_c_0_add0_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add1   un2_gs_c_0_add1_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add2   un2_gs_c_0_add2_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add3   un2_gs_c_0_add3_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add4   un2_gs_c_0_add4_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add5   un2_gs_c_0_add5_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add6   un2_gs_c_0_add6_cZ cycloneive_lcell_comb 
+Inst: un2_gs_c_0_add7   un2_gs_c_0_add7_cZ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add1   un11_gs_c_if_generate_plus_mult1_un68_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add2   un11_gs_c_if_generate_plus_mult1_un68_sum_add2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add3   un11_gs_c_if_generate_plus_mult1_un68_sum_add3 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add1   un11_gs_c_if_generate_plus_mult1_un61_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add2   un11_gs_c_if_generate_plus_mult1_un61_sum_add2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add3   un11_gs_c_if_generate_plus_mult1_un61_sum_add3 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add1   un11_gs_c_if_generate_plus_mult1_un54_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add2   un11_gs_c_if_generate_plus_mult1_un54_sum_add2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add3   un11_gs_c_if_generate_plus_mult1_un54_sum_add3 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add1   un11_gs_c_if_generate_plus_mult1_un47_sum_add1 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add2   un11_gs_c_if_generate_plus_mult1_un47_sum_add2 cycloneive_lcell_comb 
+Inst: state_RNIHQVC[0]   state_RNIHQVC_0_ cycloneive_lcell_comb 
+Inst: out_din[7]   out_din_7_ cycloneive_lcell_comb 
+Inst: out_din[6]   out_din_6_ cycloneive_lcell_comb 
+Inst: out_din[5]   out_din_5_ cycloneive_lcell_comb 
+Inst: out_din[4]   out_din_4_ cycloneive_lcell_comb 
+Inst: out_din[3]   out_din_3_ cycloneive_lcell_comb 
+Inst: out_din[2]   out_din_2_ cycloneive_lcell_comb 
+Inst: out_din[1]   out_din_1_ cycloneive_lcell_comb 
+Inst: out_din[0]   out_din_0_ cycloneive_lcell_comb 
+Inst: gs_RNO_0[7]   gs_RNO_0_7_ cycloneive_lcell_comb 
+Inst: state_0_0_0__g2_0   state_0_0_0__g2_0_cZ cycloneive_lcell_comb 
+Inst: gs_RNO[7]   gs_RNO_7_ cycloneive_lcell_comb 
+Inst: state_RNO_0[0]   state_RNO_0_0_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_1_sum2   un11_gs_c_if_generate_plus_mult1_un40_sum_1_sum2 cycloneive_lcell_comb 
+Inst: gs_RNO[6]   gs_RNO_6_ cycloneive_lcell_comb 
+Inst: state_RNO[0]   state_RNO_0_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2_2   un11_gs_c_if_generate_plus_mult1_un40_sum_0_sum2_2 cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_m_a[1]   un11_gs_c_if_generate_plus_mult1_un40_sum_m_a_1_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_m[1]   un11_gs_c_if_generate_plus_mult1_un40_sum_m_1_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_a   un11_gs_c_if_generate_plus_mult1_un40_sum_0_c1_a cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1   un11_gs_c_if_generate_plus_mult1_un40_sum_0_c1 cycloneive_lcell_comb 
+Inst: gs_RNO_0[0]   gs_RNO_0_0_ cycloneive_lcell_comb 
+Inst: gs_RNO[0]   gs_RNO_0_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]   un11_gs_c_if_generate_plus_mult1_un40_sum_m_2_ cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term   un11_gs_c_if_generate_plus_mult1_un47_sum_add2_term cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un47_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un47_sum_add1_start cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un54_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un54_sum_add1_start cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un61_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un61_sum_add1_start cycloneive_lcell_comb 
+Inst: un11_gs_c.if_generate_plus\.mult1_un68_sum_add1_start   un11_gs_c_if_generate_plus_mult1_un68_sum_add1_start cycloneive_lcell_comb 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView grayscale_0 grayscale_0
+
+BeginView fifo_24s_32s_6s_5 fifo_24s_32s_6s_5
+Inst: rd_addr[5]   rd_addr_5_ dffeas 
+Inst: rd_addr[4]   rd_addr_4_ dffeas 
+Inst: rd_addr[3]   rd_addr_3_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[5]   wr_addr_5_ dffeas 
+Inst: wr_addr[4]   wr_addr_4_ dffeas 
+Inst: wr_addr[3]   wr_addr_3_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: p_empty\.un1_empty_a_4_add0   p_empty_un1_empty_a_4_add0 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add1   p_empty_un1_empty_a_4_add1 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add2   p_empty_un1_empty_a_4_add2 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add3   p_empty_un1_empty_a_4_add3 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add4   p_empty_un1_empty_a_4_add4 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add5   p_empty_un1_empty_a_4_add5 cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO_0[5]   wr_addr_RNO_0_5_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc1   un8_wr_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: empty_t_NE_0   empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: empty_t_NE_1   empty_t_NE_1_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[4]   wr_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[3]   wr_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[5]   wr_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: rd_addr_t   rd_addr_t_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_axb0   un10_rd_addr_t_axb0_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum1   un10_rd_addr_t_sum1_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc2   un10_rd_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum2   un10_rd_addr_t_sum2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum3   un10_rd_addr_t_sum3_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[5]   rd_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum4   un10_rd_addr_t_sum4_cZ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s_5 fifo_24s_32s_6s_5
+
+BeginView fifo_24s_32s_6s_6 fifo_24s_32s_6s_6
+Inst: rd_addr[5]   rd_addr_5_ dffeas 
+Inst: rd_addr[4]   rd_addr_4_ dffeas 
+Inst: rd_addr[3]   rd_addr_3_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[5]   wr_addr_5_ dffeas 
+Inst: wr_addr[4]   wr_addr_4_ dffeas 
+Inst: wr_addr[3]   wr_addr_3_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: p_empty\.un1_empty_a_4_add0   p_empty_un1_empty_a_4_add0 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add1   p_empty_un1_empty_a_4_add1 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add2   p_empty_un1_empty_a_4_add2 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add3   p_empty_un1_empty_a_4_add3 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add4   p_empty_un1_empty_a_4_add4 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add5   p_empty_un1_empty_a_4_add5 cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc1   un8_wr_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: empty_t_NE_0   empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc2   un8_wr_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[4]   wr_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[3]   wr_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: empty_t_NE   empty_t_NE_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[5]   wr_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anb0   un10_rd_addr_t_anb0_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_axb0   un10_rd_addr_t_axb0_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum1   un10_rd_addr_t_sum1_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc2   un10_rd_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum2   un10_rd_addr_t_sum2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum3   un10_rd_addr_t_sum3_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[5]   rd_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum4   un10_rd_addr_t_sum4_cZ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s_6 fifo_24s_32s_6s_6
+
+BeginView subtract subtract
+Inst: state[0]   state_0_ dffeas 
+Inst: sub[0]   sub_0_ dffeas 
+Inst: un1_sub_c_add0   un1_sub_c_add0_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add1   un1_sub_c_add1_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add2   un1_sub_c_add2_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add3   un1_sub_c_add3_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add4   un1_sub_c_add4_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add5   un1_sub_c_add5_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add6   un1_sub_c_add6_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add7   un1_sub_c_add7_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add8   un1_sub_c_add8_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add9   un1_sub_c_add9_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add10   un1_sub_c_add10_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add11   un1_sub_c_add11_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add12   un1_sub_c_add12_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add13   un1_sub_c_add13_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add14   un1_sub_c_add14_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add15   un1_sub_c_add15_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add16   un1_sub_c_add16_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add17   un1_sub_c_add17_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add18   un1_sub_c_add18_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add19   un1_sub_c_add19_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add20   un1_sub_c_add20_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add21   un1_sub_c_add21_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add22   un1_sub_c_add22_cZ cycloneive_lcell_comb 
+Inst: un1_sub_c_add23   un1_sub_c_add23_cZ cycloneive_lcell_comb 
+Inst: state_RNIV0OI[0]   state_RNIV0OI_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_7[0]   sub_RNO_7_0_ cycloneive_lcell_comb 
+Inst: state_RNO[0]   state_RNO_0_ cycloneive_lcell_comb 
+Inst: out_din_1[0]   out_din_1_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_6[0]   sub_RNO_6_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_4[0]   sub_RNO_4_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_3[0]   sub_RNO_3_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_5[0]   sub_RNO_5_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_1[0]   sub_RNO_1_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_2[0]   sub_RNO_2_0_ cycloneive_lcell_comb 
+Inst: sub_RNO_0[0]   sub_RNO_0_0_ cycloneive_lcell_comb 
+Inst: sub_RNO[0]   sub_RNO_0_ cycloneive_lcell_comb 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView subtract subtract
+
+BeginView fifo_24s_32s_6s_7 fifo_24s_32s_6s_7
+Inst: rd_addr[5]   rd_addr_5_ dffeas 
+Inst: rd_addr[4]   rd_addr_4_ dffeas 
+Inst: rd_addr[3]   rd_addr_3_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[5]   wr_addr_5_ dffeas 
+Inst: wr_addr[4]   wr_addr_4_ dffeas 
+Inst: wr_addr[3]   wr_addr_3_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: empty   empty_Z dffeas 
+Inst: p_empty\.un1_empty_a_4_add0   p_empty_un1_empty_a_4_add0 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add1   p_empty_un1_empty_a_4_add1 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add2   p_empty_un1_empty_a_4_add2 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add3   p_empty_un1_empty_a_4_add3 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add4   p_empty_un1_empty_a_4_add4 cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_add5   p_empty_un1_empty_a_4_add5 cycloneive_lcell_comb 
+Inst: full_3   full_3_cZ cycloneive_lcell_comb 
+Inst: full_2   full_2_cZ cycloneive_lcell_comb 
+Inst: empty_t_NE_0   empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: full_0   full_0_cZ cycloneive_lcell_comb 
+Inst: rd_addr_t   rd_addr_t_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_axb0   un10_rd_addr_t_axb0_cZ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc1   un8_wr_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum1   un10_rd_addr_t_sum1_cZ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc2   un8_wr_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[4]   wr_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[3]   wr_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_anc2   un10_rd_addr_t_anc2_cZ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum2   un10_rd_addr_t_sum2_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[5]   wr_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum3   un10_rd_addr_t_sum3_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[5]   rd_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: un10_rd_addr_t_sum4   un10_rd_addr_t_sum4_cZ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s_7 fifo_24s_32s_6s_7
+
+BeginView fifo_24s_32s_6s_1 fifo_24s_32s_6s_1
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[3]   rd_addr_3_ dffeas 
+Inst: rd_addr[4]   rd_addr_4_ dffeas 
+Inst: rd_addr[5]   rd_addr_5_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: empty   empty_Z dffeas 
+Inst: rd_addr_c2   rd_addr_c2_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[1]   rd_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_a_4_c3   p_empty_un1_empty_a_4_c3 cycloneive_lcell_comb 
+Inst: empty_t_NE_1   empty_t_NE_1_cZ cycloneive_lcell_comb 
+Inst: rd_addr_RNIA0U7[2]   rd_addr_RNIA0U7_2_ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[0]   rd_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[4]   rd_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[3]   rd_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: rd_addr_RNO[2]   rd_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: rd_addr_RNI4R9R[5]   rd_addr_RNI4R9R_5_ cycloneive_lcell_comb 
+Inst: wr_addr[5]   wr_addr_5_ ghost 
+Inst: wr_addr[4]   wr_addr_4_ ghost 
+Inst: wr_addr[3]   wr_addr_3_ ghost 
+Inst: wr_addr[2]   wr_addr_2_ ghost 
+Inst: wr_addr[1]   wr_addr_1_ ghost 
+Inst: wr_addr[0]   wr_addr_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s_1 fifo_24s_32s_6s_1
+
+BeginView fifo_24s_32s_6s_0 fifo_24s_32s_6s_0
+Inst: wr_addr[5]   wr_addr_5_ dffeas 
+Inst: wr_addr[4]   wr_addr_4_ dffeas 
+Inst: wr_addr[3]   wr_addr_3_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: empty   empty_Z dffeas 
+Inst: wr_addr_RNO_0[5]   wr_addr_RNO_0_5_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: un8_wr_addr_t_anc1   un8_wr_addr_t_anc1_cZ cycloneive_lcell_comb 
+Inst: p_empty\.un1_empty_NE_4   p_empty_un1_empty_NE_4 cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[4]   wr_addr_RNO_4_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[3]   wr_addr_RNO_3_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[5]   wr_addr_RNO_5_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: reset_buf_i   reset_buf_i_cZ inv 
+EndView fifo_24s_32s_6s_0 fifo_24s_32s_6s_0

@@ -1,0 +1,24 @@
+# //  Questa Sim
+# //  Version 2019.3_2 linux Sep 24 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project matmul
+# reading /vol/mentor/questa_sim-2019.3_2/questasim/linux/../modelsim.ini
+# Loading project motion_detect
+# Compile of fifo.sv was successful.
+# Compile of grayscale.sv was successful.
+# Compile of highlight.sv was successful.
+# Compile of motion_detect_tb.sv was successful.
+# Compile of motion_detect_top.sv was successful.
+# Compile of subtract.sv was successful.
+# 6 compiles, 0 failed with no errors.

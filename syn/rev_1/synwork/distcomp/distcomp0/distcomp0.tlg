@@ -1,0 +1,45 @@
+@N:: Applying property .distcompmodetop with value 1 on module motion_detect_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module motion_detect_top in library work
+@N:: Applying property .noprune with value 1 on module motion_detect_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module fifo in library work
+@N:: Applying property .noprune with value 1 on module fifo in library work
+@N:: Applying property .distcompnoprune with value 1 on module highlight in library work
+@N:: Applying property .noprune with value 1 on module highlight in library work
+@N:: Applying property .distcompnoprune with value 1 on module subtract in library work
+@N:: Applying property .noprune with value 1 on module subtract in library work
+@N:: Applying property .distcompnoprune with value 1 on module grayscale in library work
+@N:: Applying property .noprune with value 1 on module grayscale in library work
+Selecting top level module motion_detect_top
+@N: CG364 :"/home/gfa2226/fpga/hw3/motion_detect/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000011000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000000000100000
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000000110
+   Generated name = fifo_24s_32s_6s
+Running optimization stage 1 on fifo_24s_32s_6s .......
+@N: CL134 :"/home/gfa2226/fpga/hw3/motion_detect/fifo.sv":35:4:35:12|Found RAM fifo_buf, depth=32, width=24
+@N: CG364 :"/home/gfa2226/fpga/hw3/motion_detect/grayscale.sv":1:7:1:15|Synthesizing module grayscale in library work.
+Running optimization stage 1 on grayscale .......
+@N: CG364 :"/home/gfa2226/fpga/hw3/motion_detect/subtract.sv":1:7:1:14|Synthesizing module subtract in library work.
+Running optimization stage 1 on subtract .......
+@N: CG364 :"/home/gfa2226/fpga/hw3/motion_detect/highlight.sv":1:7:1:15|Synthesizing module highlight in library work.
+@E: CG478 :"/home/gfa2226/fpga/hw3/motion_detect/highlight.sv":41:45:41:46|Expression size is either 0 or could not be determined.
+@E: CG853 :"/home/gfa2226/fpga/hw3/motion_detect/highlight.sv":41:45:41:77|Attempting to evaluate unsized expression
+@N: CG364 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":1:7:1:23|Synthesizing module motion_detect_top in library work.
+@W: CG133 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":14:17:14:21|Object rd_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":33:6:33:23|Object highlight_fr_wr_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":34:23:34:38|Object highlight_fr_din is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on motion_detect_top .......
+Running optimization stage 2 on motion_detect_top .......
+@A: CL153 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":14:17:14:21|*Unassigned bits of rd_en are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":33:6:33:23|*Unassigned bits of highlight_fr_wr_en are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/gfa2226/fpga/hw3/motion_detect/motion_detect_top.sv":34:23:34:38|*Unassigned bits of highlight_fr_din[23:0] are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on subtract .......
+@W: CL279 :"/home/gfa2226/fpga/hw3/motion_detect/subtract.sv":20:0:20:8|Pruning register bits 23 to 1 of sub[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on grayscale .......
+Running optimization stage 2 on fifo_24s_32s_6s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gfa2226/fpga/hw3/motion_detect/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

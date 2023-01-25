@@ -1,39 +1,42 @@
 module motion_detect_top #(
     parameter DATA_WIDTH = 24,
-    parameter FIFO_BUFFER_SIZE = 32
+    parameter FIFO_BUFFER_SIZE = 256
 )
 (
-    input logic clock,
-    input logic reset,
-    input logic bg_wr_en,
-    input logic [DATA_WIDTH-1:0] bg_din,
-    output logic bg_full,
-    input logic fr_wr_en,
-    input logic [DATA_WIDTH-1:0] fr_din,
-    output logic fr_full,
-    output logic rd_en,
-    output logic [DATA_WIDTH-1:0] dout,
-    output logic empty
+    input  logic                    clock,
+    input  logic                    reset,
+    input  logic                    bg_wr_en,
+    input  logic [DATA_WIDTH-1:0]   bg_din,
+    output logic                    bg_full,
+    input  logic                    fr_wr_en,
+    input  logic [DATA_WIDTH-1:0]   fr_din,
+    output logic                    fr_full,
+    input  logic                    highlight_fr_wr_en,
+    input  logic [DATA_WIDTH-1:0]   highlight_fr_din,
+    output logic                    highlight_fr_full,
+    input  logic                    rd_en,
+    output logic [DATA_WIDTH-1:0]   dout,
+    output logic                    empty
 );
 
-logic bg_rd_en, bg_empty;
-logic [DATA_WIDTH-1:0] bg_dout;
-logic fr_rd_en, fr_empty;
-logic [DATA_WIDTH-1:0] fr_dout;
-logic [7:0] gray_bg_din, gray_fr_din;
-logic gray_bg_full, gray_bg_wr_en, gray_fr_full, gray_fr_wr_en;
-logic sub_bg_rd_en, gray_bg_empty;
-logic [DATA_WIDTH-1:0] gray_bg_dout;
-logic sub_fr_rd_en, gray_fr_empty;
-logic [DATA_WIDTH-1:0] gray_fr_dout;
-logic sub_wr_en, sub_full;
-logic [DATA_WIDTH-1:0] sub_din;
-logic highlight_sub_rd_en, sub_fifo_empty;
-logic [DATA_WIDTH-1:0] sub_fifo_dout;
-logic highlight_fr_wr_en, highlight_fr_full, highlight_fr_rd_en, highlight_fr_empty;
-logic [DATA_WIDTH-1:0] highlight_fr_din, highlight_fr_dout;
-logic final_fifo_wr_en, final_fifo_full;
-logic [DATA_WIDTH-1:0] final_fifo_din;
+logic                   bg_rd_en, bg_empty;
+logic [DATA_WIDTH-1:0]  bg_dout;
+logic                   fr_rd_en, fr_empty;
+logic [DATA_WIDTH-1:0]  fr_dout;
+logic [7:0]             gray_bg_din, gray_fr_din;
+logic                   gray_bg_full, gray_bg_wr_en, gray_fr_full, gray_fr_wr_en;
+logic                   sub_bg_rd_en, gray_bg_empty;
+logic [DATA_WIDTH-1:0]  gray_bg_dout;
+logic                   sub_fr_rd_en, gray_fr_empty;
+logic [DATA_WIDTH-1:0]  gray_fr_dout;
+logic                   sub_wr_en, sub_full;
+logic [DATA_WIDTH-1:0]  sub_din;
+logic                   highlight_sub_rd_en, sub_fifo_empty;
+logic [DATA_WIDTH-1:0]  sub_fifo_dout;
+logic                   highlight_fr_rd_en, highlight_fr_empty;
+logic [DATA_WIDTH-1:0]  highlight_fr_dout;
+logic                   final_fifo_wr_en, final_fifo_full;
+logic [DATA_WIDTH-1:0]  final_fifo_din;
 
 // input fifos
 
@@ -100,7 +103,7 @@ fifo #(
     .reset(reset),
     .wr_clk(clock),
     .wr_en(gray_bg_wr_en),
-    .din({gray_bg_din, gray_bg_din, gray_bg_din}),
+    .din({3{gray_bg_din}}),
     .full(gray_bg_full),
     .rd_clk(clock),
     .rd_en(sub_bg_rd_en), // add logic signal output from subtract instance
@@ -115,7 +118,7 @@ fifo #(
     .reset(reset),
     .wr_clk(clock),
     .wr_en(gray_fr_wr_en),
-    .din({gray_fr_din, gray_fr_din, gray_fr_din}),
+    .din({3{gray_fr_din}}),
     .full(gray_fr_full),
     .rd_clk(clock),
     .rd_en(sub_fr_rd_en), // add logic signal output from subtract instance
@@ -162,7 +165,7 @@ fifo #(
 ) pre_highlight_frame_fifo (
     .reset(reset),
     .wr_clk(clock),
-    .wr_en(highlight_fr_wr_en), // add input logic signal
+    .wr_en(highlight_fr_wr_en), //  add input logic signal
     .din(highlight_fr_din), // add input logic [DATA_WIDTH-1:0] signal
     .full(highlight_fr_full), // add output logic signal
     .rd_clk(clock),
@@ -199,7 +202,7 @@ fifo #(
     .din(final_fifo_din),
     .full(final_fifo_full),
     .rd_clk(clock),
-    .rd_en(rd_en), // add output logic signal
+    .rd_en(rd_en), // add input logic signal
     .dout(dout), // add output logic [DATA_WIDTH-1:0] signal
     .empty(empty) // add output logic signal
 );

@@ -1,0 +1,11 @@
+motion_detect_top.final_fifo work fifo 0 1
+motion_detect_top.highlighter work highlight 0 1
+motion_detect_top.pre_highlight_frame_fifo work fifo 0 1
+motion_detect_top.sub_fifo work fifo 0 1
+motion_detect_top.subtractor work subtract 0 1
+motion_detect_top.gray_fr work fifo 0 1
+motion_detect_top.gray_bg work fifo 0 1
+motion_detect_top.fr_grayscale work grayscale 0 1
+motion_detect_top.bg_grayscale work grayscale 0 1
+motion_detect_top.frame work fifo 0 1
+motion_detect_top.background work fifo 0 1

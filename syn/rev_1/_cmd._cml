@@ -1,0 +1,1 @@
+-distcompmode -link    -encrypt       -top work.motion_detect_top -osyn /home/gfa2226/fpga/hw3/motion_detect/syn/rev_1/synwork/subtract_comp.srs /home/gfa2226/fpga/hw3/motion_detect/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.srs    

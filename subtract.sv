@@ -16,6 +16,7 @@ typedef enum logic [0:0] {s0, s1} state_types;
 state_types state, state_c;
 
 logic [23:0] sub, sub_c;
+logic [8:0] tmp_sub, absolute;
 
 always_ff @(posedge clock or posedge reset) begin
     if (reset == 1'b1) begin
@@ -34,11 +35,13 @@ always_comb begin
     out_din   = 24'b0;
     state_c   = state;
     sub_c = sub;
+    tmp_sub =  ($unsigned({1'b0, fr_dout[7:0]}) - $unsigned({1'b0, bg_dout[7:0]}));
+    absolute = (tmp_sub[8] == 1'b1) ? ~tmp_sub + 9'd1 : tmp_sub;
 
     case (state)
         s0: begin
             if (bg_empty == 1'b0 && fr_empty == 1'b0) begin
-                sub_c = ($unsigned(fr_dout) - $unsigned(bg_dout) == 24'b0) ? 24'h0 : 24'hffffff;
+                sub_c = ($unsigned(absolute) < 9'd50) ? 24'b0 : 24'hffffff;
                 bg_rd_en = 1'b1;
                 fr_rd_en = 1'b1;
                 state_c = s1;

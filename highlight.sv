@@ -38,7 +38,7 @@ always_comb begin
     case (state)
         s0: begin
             if (img_empty == 1'b0 && fr_empty == 1'b0) begin
-                img_c = ($unsigned(sub_dout) == 24'b0) ? fr_dout : 24'h0000ff;
+                img_c = ($unsigned(img_dout) == 24'b0) ? fr_dout : 24'h0000ff;
                 img_rd_en = 1'b1;
                 fr_rd_en = 1'b1;
                 state_c = s1;
