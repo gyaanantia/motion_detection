@@ -41,7 +41,7 @@ always_comb begin
     case (state)
         s0: begin
             if (bg_empty == 1'b0 && fr_empty == 1'b0) begin
-                sub_c = ($unsigned(absolute) < 9'd50) ? 24'b0 : 24'hffffff;
+                sub_c = ($unsigned(absolute) <= 9'd50) ? 24'b0 : 24'hffffff;
                 bg_rd_en = 1'b1;
                 fr_rd_en = 1'b1;
                 state_c = s1;

@@ -1,0 +1,170 @@
+m255
+K4
+z2
+!s11f vlog 2019.3_2 2019.09, Sep 24 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/gfa2226/fpga/hw3/motion_detect
+T_opt
+!s110 1674683139
+VJfiL:7G7=NfDJ2ACD5hnQ1
+04 16 4 work motion_detect_tb fast 0
+=1-000ae431a4f1-63d1a302-ad200-283fdb
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OE;O;2019.3_2;69
+vfifo
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1674683138
+!i10b 1
+!s100 JJ9WTn?^46FJn6Sib6ECo1
+!s11b _kP]^9cFJ5[i@4IC9XR9i2
+IKCo_SG4HC0NOH`26aBODe2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1642525910
+8fifo.sv
+Ffifo.sv
+!i122 -1
+L0 2
+Z5 OE;L;2019.3_2;69
+r1
+!s85 0
+31
+Z6 !s108 1674683138.000000
+!s107 fifo.sv|
+!s90 -work|work|fifo.sv|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vgrayscale
+R2
+R3
+!i10b 1
+!s100 zZbFQRc8IWK5F`<he5zLV3
+!s11b Wmj85]jbi1^eF2UXj`AY_0
+I4Kao6;4F3USI7]?R=DAb81
+R4
+S1
+R0
+w1674554952
+8grayscale.sv
+Fgrayscale.sv
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 grayscale.sv|
+!s90 -work|work|grayscale.sv|
+!i113 0
+R7
+R1
+vhighlight
+R2
+R3
+!i10b 1
+!s100 WGS7_gV1^mdGj?M0TiPjQ2
+!s11b 3Y_RG:Q[DaR?OlHgHF^oC0
+I<Ad_<5Zmd^ogM6bX93GiS0
+R4
+S1
+R0
+w1674631735
+8highlight.sv
+Fhighlight.sv
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 highlight.sv|
+!s90 -work|work|highlight.sv|
+!i113 0
+R7
+R1
+vmotion_detect_tb
+R2
+R3
+!i10b 1
+!s100 _><[]UoNGSVCJ7hUo37IV1
+!s11b I`41J3a0_NJj>`XC;>fVQ1
+ImSo8AQ8[medioooZ@659E0
+R4
+S1
+R0
+w1674643707
+8motion_detect_tb.sv
+Fmotion_detect_tb.sv
+!i122 -1
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 motion_detect_tb.sv|
+!s90 -work|work|motion_detect_tb.sv|
+!i113 0
+R7
+R1
+vmotion_detect_top
+R2
+R3
+!i10b 1
+!s100 ibUGP6L5DgW;n3A;[^O9S2
+!s11b e0f3j=Ml^MWnWfB:nedF62
+I?YB=31f3VhV`S`^_EHSak2
+R4
+S1
+R0
+w1674642615
+8motion_detect_top.sv
+Fmotion_detect_top.sv
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 motion_detect_top.sv|
+!s90 -work|work|motion_detect_top.sv|
+!i113 0
+R7
+R1
+vsubtract
+R2
+R3
+!i10b 1
+!s100 YeM01F6]4lOD_>gEfmPDh3
+!s11b KPBJHT5X=d[K7ga_?LKDQ0
+ITJL?i7aFRUW]O3<31=j;?3
+R4
+S1
+R0
+w1674683087
+8subtract.sv
+Fsubtract.sv
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 subtract.sv|
+!s90 -work|work|subtract.sv|
+!i113 0
+R7
+R1

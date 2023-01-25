@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
 	unsigned char *base_gs = (unsigned char *)malloc(768*576*sizeof(unsigned char));
 	unsigned char *img_gs = (unsigned char *)malloc(768*576*sizeof(unsigned char));
 	unsigned char *output_img = (unsigned char *)malloc(768*576*sizeof(unsigned char));
-	unsigned char header[64];
+	unsigned char header[54];
 	int height, width;
 
 	FILE * base_file = fopen("base.bmp","rb");

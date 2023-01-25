@@ -1,0 +1,11 @@
+Total simulation cycle count: 884745
+56 Errors :(
+
+LUTs for combinational functions (total_luts): 530	
+Non I/O Registers (non_io_reg):	178
+I/O Pins: 106	
+I/O registers (total_io_reg): 0
+DSP Blocks (dsp_used): 0 (15)
+Memory Bits: 34816
+
+Est Freq: 74.4 MHz
