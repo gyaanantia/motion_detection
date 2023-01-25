@@ -5,8 +5,35 @@ module motion_detect_top #(
 (
     input logic clock,
     input logic reset,
-    
+    input logic bg_wr_en,
+    input logic [DATA_WIDTH-1:0] bg_din,
+    output logic bg_full,
+    input logic fr_wr_en,
+    input logic [DATA_WIDTH-1:0] fr_din,
+    output logic fr_full,
+    output logic rd_en,
+    output logic [DATA_WIDTH-1:0] dout,
+    output logic empty
 );
+
+logic bg_rd_en, bg_empty;
+logic [DATA_WIDTH-1:0] bg_dout;
+logic fr_rd_en, fr_empty;
+logic [DATA_WIDTH-1:0] fr_dout;
+logic [7:0] gray_bg_din, gray_fr_din;
+logic gray_bg_full, gray_bg_wr_en, gray_fr_full, gray_fr_wr_en;
+logic sub_bg_rd_en, gray_bg_empty;
+logic [DATA_WIDTH-1:0] gray_bg_dout;
+logic sub_fr_rd_en, gray_fr_empty;
+logic [DATA_WIDTH-1:0] gray_fr_dout;
+logic sub_wr_en, sub_full;
+logic [DATA_WIDTH-1:0] sub_din;
+logic highlight_sub_rd_en, sub_fifo_empty;
+logic [DATA_WIDTH-1:0] sub_fifo_dout;
+logic highlight_fr_wr_en, highlight_fr_full, highlight_fr_rd_en, highlight_fr_empty;
+logic [DATA_WIDTH-1:0] highlight_fr_din, highlight_fr_dout;
+logic final_fifo_wr_en, final_fifo_full;
+logic [DATA_WIDTH-1:0] final_fifo_din;
 
 // input fifos
 
@@ -16,13 +43,13 @@ fifo #(
 ) background (
     .reset(reset),
     .wr_clk(clock),
-    .wr_en(bg_wr_en), // TODO: add input logic signal
-    .din(bg_din), // TODO: add input logic [DATA_WIDTH-1:0] signal
-    .full(bg_full), // TODO: add output logic signal 
+    .wr_en(bg_wr_en), // add input logic signal
+    .din(bg_din), // add input logic [DATA_WIDTH-1:0] signal
+    .full(bg_full), // add output logic signal 
     .rd_clk(clock),
-    .rd_en(bg_rd_en), // TODO: add logic signal output from the bg_grayscale module
-    .dout(bg_dout), // TODO: add logic signal [DATA_WIDTH-1:0] input to the bg_grayscale instance
-    .empty(bg_empty) // TODO: add logic signal input to the bg_grayscale instance
+    .rd_en(bg_rd_en), // add logic signal output from the bg_grayscale module
+    .dout(bg_dout), // add logic signal [DATA_WIDTH-1:0] input to the bg_grayscale instance
+    .empty(bg_empty) // add logic signal input to the bg_grayscale instance
 );
 
 fifo #(
@@ -31,13 +58,13 @@ fifo #(
 ) frame (
     .reset(reset),
     .wr_clk(clock),
-    .wr_en(fr_wr_en), // TODO: add input logic signal
-    .din(fr_din), // TODO: add input logic [DATA_WIDTH-1:0] signal
-    .full(fr_full), // TODO: add output logic signal 
+    .wr_en(fr_wr_en), // add input logic signal
+    .din(fr_din), // add input logic [DATA_WIDTH-1:0] signal
+    .full(fr_full), // add output logic signal 
     .rd_clk(clock),
-    .rd_en(fr_rd_en), // TODO: add logic signal output from the fr_grayscale module
-    .dout(fr_dout), // TODO: add logic signal [DATA_WIDTH-1:0] input to the fr_grayscale instance
-    .empty(fr_empty) // TODO: add logic signal input to the fr_grayscale instance
+    .rd_en(fr_rd_en), // add logic signal output from the fr_grayscale module
+    .dout(fr_dout), // add logic signal [DATA_WIDTH-1:0] input to the fr_grayscale instance
+    .empty(fr_empty) // add logic signal input to the fr_grayscale instance
 );
 
 // grayscales
@@ -48,9 +75,9 @@ grayscale bg_grayscale (
     .in_dout(bg_dout),
     .in_rd_en(bg_rd_en),
     .in_empty(bg_empty),
-    .out_din(gray_bg_din), // TODO: add logic signal [7:0] input to the gray_bg fifo
-    .out_full(gray_bg_full), // TODO: add logic signal output from gray_bg fifo
-    .out_wr_en(gray_bg_wr_en) // TODO: add logic signal input to gray_bg fifo 
+    .out_din(gray_bg_din), // add logic signal [7:0] input to the gray_bg fifo
+    .out_full(gray_bg_full), // add logic signal output from gray_bg fifo
+    .out_wr_en(gray_bg_wr_en) // add logic signal input to gray_bg fifo 
 );
 
 grayscale fr_grayscale (
@@ -59,9 +86,9 @@ grayscale fr_grayscale (
     .in_dout(fr_dout),
     .in_rd_en(fr_rd_en),
     .in_empty(fr_empty),
-    .out_din(gray_fr_din), // TODO: add logic signal [7:0] input to the gray_fr fifo
-    .out_full(gray_fr_full), // TODO: add logic signal output from the gray_fr fifo
-    .out_wr_en(gray_fr_wr_en) // TODO: add logic signal input to gray_fr fifo 
+    .out_din(gray_fr_din), // add logic signal [7:0] input to the gray_fr fifo
+    .out_full(gray_fr_full), // add logic signal output from the gray_fr fifo
+    .out_wr_en(gray_fr_wr_en) // add logic signal input to gray_fr fifo 
 );
 
 // grayscale fifos
@@ -76,9 +103,9 @@ fifo #(
     .din({gray_bg_din, gray_bg_din, gray_bg_din}),
     .full(gray_bg_full),
     .rd_clk(clock),
-    .rd_en(sub_bg_rd_en), // TODO: add logic signal output from subtract instance
-    .dout(gray_bg_dout), // TODO: add logic signal [DATA_WIDTH-1:0] input to subtract instance
-    .empty(gray_bg_empty) // TODO: add logic signal input to subtract instance
+    .rd_en(sub_bg_rd_en), // add logic signal output from subtract instance
+    .dout(gray_bg_dout), // add logic signal [DATA_WIDTH-1:0] input to subtract instance
+    .empty(gray_bg_empty) // add logic signal input to subtract instance
 );
 
 fifo #(
@@ -91,9 +118,9 @@ fifo #(
     .din({gray_fr_din, gray_fr_din, gray_fr_din}),
     .full(gray_fr_full),
     .rd_clk(clock),
-    .rd_en(sub_fr_rd_en), // TODO: add logic signal output from subtract instance
-    .dout(gray_fr_dout), // TODO: add logic signal [DATA_WIDTH-1:0] input to subtract instance
-    .empty(gray_fr_empty) // TODO: add logic signal input to subtract instance
+    .rd_en(sub_fr_rd_en), // add logic signal output from subtract instance
+    .dout(gray_fr_dout), // add logic signal [DATA_WIDTH-1:0] input to subtract instance
+    .empty(gray_fr_empty) // add logic signal input to subtract instance
 );
 
 // subtract
@@ -107,9 +134,9 @@ subtract subtractor (
     .fr_rd_en(sub_fr_rd_en),
     .fr_empty(gray_fr_empty),
     .fr_dout(gray_fr_dout),
-    .out_wr_en(sub_wr_en), // TODO: add logic signal input into sub_fifo
-    .out_full(sub_full), // TODO: add logic signal output from sub_fifo
-    .out_din(sub_din) // TODO: add logic signal [DATA_WIDTH-1:0] input to sub fifo
+    .out_wr_en(sub_wr_en), // add logic signal input into sub_fifo
+    .out_full(sub_full), // add logic signal output from sub_fifo
+    .out_din(sub_din) // add logic signal [DATA_WIDTH-1:0] input to sub fifo
 );
 
 // post-subtract fifo and pre-highlight frame fifo
@@ -124,9 +151,9 @@ fifo #(
     .din(sub_din),
     .full(sub_full),
     .rd_clk(clock),
-    .rd_en(highlight_sub_rd_en), // TODO: add logic signal output from highlight
-    .dout(sub_fifo_dout), // TODO: add logic signal [DATA_WIDTH-1:0] input to highlight
-    .empty(sub_fifo_empty) //TODO: add logic signal input to highlight
+    .rd_en(highlight_sub_rd_en), // add logic signal output from highlight
+    .dout(sub_fifo_dout), // add logic signal [DATA_WIDTH-1:0] input to highlight
+    .empty(sub_fifo_empty) // add logic signal input to highlight
 );
 
 fifo #(
@@ -135,13 +162,13 @@ fifo #(
 ) pre_highlight_frame_fifo (
     .reset(reset),
     .wr_clk(clock),
-    .wr_en(highlight_fr_wr_en), // TODO: add input logic signal
-    .din(highlight_fr_din), // TODO: add input logic [DATA_WIDTH-1:0] signal
-    .full(highlight_fr_full), // TODO: add output logic signal
+    .wr_en(highlight_fr_wr_en), // add input logic signal
+    .din(highlight_fr_din), // add input logic [DATA_WIDTH-1:0] signal
+    .full(highlight_fr_full), // add output logic signal
     .rd_clk(clock),
-    .rd_en(highlight_fr_rd_en), // TODO: add logic signal output from highlight
-    .dout(highlight_fr_dout), // TODO: add logic signal [DATA_WIDTH-1:0] input to highlight
-    .empty(highlight_fr_empty) //TODO: add logic signal input to highlight
+    .rd_en(highlight_fr_rd_en), // add logic signal output from highlight
+    .dout(highlight_fr_dout), // add logic signal [DATA_WIDTH-1:0] input to highlight
+    .empty(highlight_fr_empty) // add logic signal input to highlight
 );
 
 // highlight
@@ -155,9 +182,9 @@ highlight highlighter (
     .fr_rd_en(highlight_fr_rd_en),
     .fr_empty(highlight_fr_empty),
     .fr_dout(highlight_fr_dout),
-    .out_wr_en(final_fifo_wr_en), // TODO: add logic signal input to final fifo
-    .out_full(final_fifo_full), // TODO: add logic signal output from final fifo
-    .out_din(final_fifo_din) // TODO: add logic signal [DATA_WIDTH-1:0] input to final fifo
+    .out_wr_en(final_fifo_wr_en), // add logic signal input to final fifo
+    .out_full(final_fifo_full), // add logic signal output from final fifo
+    .out_din(final_fifo_din) // add logic signal [DATA_WIDTH-1:0] input to final fifo
 );
 
 // final fifo
@@ -172,9 +199,9 @@ fifo #(
     .din(final_fifo_din),
     .full(final_fifo_full),
     .rd_clk(clock),
-    .rd_en(rd_en), // TODO: add output logic signal
-    .dout(dout), // TODO: add output logic [DATA_WIDTH-1:0] signal
-    .empty(empty) // TODO: add output logic signal
+    .rd_en(rd_en), // add output logic signal
+    .dout(dout), // add output logic [DATA_WIDTH-1:0] signal
+    .empty(empty) // add output logic signal
 );
 
 endmodule
