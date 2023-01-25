@@ -1,5 +1,4 @@
 Total simulation cycle count: 884745
-56 Errors :(
 
 LUTs for combinational functions (total_luts): 530	
 Non I/O Registers (non_io_reg):	178
