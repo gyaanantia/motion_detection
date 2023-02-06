@@ -5,62 +5,62 @@
 # vmap work work 
 # Modifying modelsim.ini
 # QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
-# Start time: 15:45:38 on Jan 25,2023
+# Start time: 15:51:29 on Jan 25,2023
 # vlog -work work motion_detect_top.sv 
 # -- Compiling module motion_detect_top
 # 
 # Top level modules:
 # 	motion_detect_top
-# End time: 15:45:38 on Jan 25,2023, Elapsed time: 0:00:00
+# End time: 15:51:29 on Jan 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
-# Start time: 15:45:38 on Jan 25,2023
+# Start time: 15:51:29 on Jan 25,2023
 # vlog -work work fifo.sv 
 # -- Compiling module fifo
 # 
 # Top level modules:
 # 	fifo
-# End time: 15:45:38 on Jan 25,2023, Elapsed time: 0:00:00
+# End time: 15:51:29 on Jan 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
-# Start time: 15:45:38 on Jan 25,2023
+# Start time: 15:51:29 on Jan 25,2023
 # vlog -work work subtract.sv 
 # -- Compiling module subtract
 # 
 # Top level modules:
 # 	subtract
-# End time: 15:45:38 on Jan 25,2023, Elapsed time: 0:00:00
+# End time: 15:51:29 on Jan 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
-# Start time: 15:45:38 on Jan 25,2023
+# Start time: 15:51:29 on Jan 25,2023
 # vlog -work work highlight.sv 
 # -- Compiling module highlight
 # 
 # Top level modules:
 # 	highlight
-# End time: 15:45:38 on Jan 25,2023, Elapsed time: 0:00:00
+# End time: 15:51:29 on Jan 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
-# Start time: 15:45:38 on Jan 25,2023
+# Start time: 15:51:29 on Jan 25,2023
 # vlog -work work grayscale.sv 
 # -- Compiling module grayscale
 # 
 # Top level modules:
 # 	grayscale
-# End time: 15:45:38 on Jan 25,2023, Elapsed time: 0:00:00
+# End time: 15:51:29 on Jan 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
-# Start time: 15:45:38 on Jan 25,2023
+# Start time: 15:51:29 on Jan 25,2023
 # vlog -work work motion_detect_tb.sv 
 # -- Compiling module motion_detect_tb
 # 
 # Top level modules:
 # 	motion_detect_tb
-# End time: 15:45:38 on Jan 25,2023, Elapsed time: 0:00:00
+# End time: 15:51:29 on Jan 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.motion_detect_tb -wlf motion_detect.wlf 
-# Start time: 15:45:38 on Jan 25,2023
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 15:51:29 on Jan 25,2023
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 2019.3_2 linux Sep 24 2019
 # //
@@ -82,7 +82,18 @@
 # Loading work.grayscale(fast)
 # Loading work.subtract(fast)
 # Loading work.highlight(fast)
-# @ 20: Loading file /home/gfa2226/fpga/hw3/motion_detect/pedestrians_copy.bmp...
+# ** Error: Unable to lock WLF file "motion_detect.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "motion_detect.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "motion_detect.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "motion_detect.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: motion_detect.wlf
+#           File in use by: unknown  Hostname: joker.ece.northwestern.edu  ProcessID: 2637787
+#           Attempting to use alternate WLF file "./wlftbJQcYS".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: motion_detect.wlf
+#          # End time: 15:52:40 on Jan 25,2023, Elapsed time: 0:07:02
+# Errors: 0, Warnings: 0
+on_detect/pedestrians_copy.bmp...
 # @ 20: Loading file /home/gfa2226/fpga/hw3/motion_detect/pedestrians.bmp...
 # @ 20: Loading file /home/gfa2226/fpga/hw3/motion_detect/base.bmp...
 # @ 25: Comparing file /home/gfa2226/fpga/hw3/motion_detect/detect.bmp...
